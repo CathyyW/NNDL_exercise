@@ -4,7 +4,7 @@ import torch
 from torch.autograd import Variable
 import torch.optim as optim
 
-import rnn
+import rnn as rnn_lstm
 
 start_token = 'G'
 end_token = 'E'
@@ -226,8 +226,8 @@ pretty_print_poem(gen_poem("红"))
 pretty_print_poem(gen_poem("山"))
 pretty_print_poem(gen_poem("夜"))
 pretty_print_poem(gen_poem("湖"))
-pretty_print_poem(gen_poem("湖"))
-pretty_print_poem(gen_poem("湖"))
+pretty_print_poem(gen_poem("海"))
+pretty_print_poem(gen_poem("月"))
 pretty_print_poem(gen_poem("君"))
 
 
